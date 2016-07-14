@@ -1,19 +1,17 @@
 {
-  "name": "dri19tcc",
-  "version": "1.0.0",
-  "description": "In this project we will focus on build a simple rails app that has three data models (Movie, Album, Book). We will be focusing on rails request cycle comprehension and introducing testing to our rails applications. To maximize the focus on comprehension, students will implement features based off of an existing website (http://media-ranker.herokuapp.com).",
-  "main": "index.js",
+  "name": "MediaRanker",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dri19tcc/MediaRanker.git"
-  },
-  "author": "dri19tcc",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dri19tcc/MediaRanker/issues"
-  },
-  "homepage": "https://github.com/dri19tcc/MediaRanker#readme"
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
 }
