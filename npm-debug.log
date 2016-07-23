@@ -9,7 +9,7 @@
 6 silly lifecycle MediaRanker@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle MediaRanker@0.0.0~start: MediaRanker@0.0.0
 8 verbose lifecycle MediaRanker@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle MediaRanker@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/dri19tcc/c5/projects/MediaRanker/node_modules/.bin:/usr/local/Cellar/node/6.2.1/bin:/Users/dri19tcc/.rvm/gems/ruby-2.3.0/bin:/Users/dri19tcc/.rvm/gems/ruby-2.3.0@global/bin:/Users/dri19tcc/.rvm/rubies/ruby-2.3.0/bin:/Users/dri19tcc/.rbenv/shims:/Users/dri19tcc/.rbenv/shims:/Users/dri19tcc/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dri19tcc/.rvm/bin
+9 verbose lifecycle MediaRanker@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/dri19tcc/c5/projects/MediaRanker/node_modules/.bin:/usr/local/Cellar/node/6.2.1/bin:/Users/dri19tcc/.rbenv/shims:/Users/dri19tcc/.rbenv/shims:/Users/dri19tcc/.rbenv/shims:/Users/dri19tcc/.rvm/gems/ruby-2.3.0/bin:/Users/dri19tcc/.rvm/gems/ruby-2.3.0@global/bin:/Users/dri19tcc/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/dri19tcc/.rvm/bin
 10 verbose lifecycle MediaRanker@0.0.0~start: CWD: /Users/dri19tcc/c5/projects/MediaRanker
 11 silly lifecycle MediaRanker@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle MediaRanker@0.0.0~start: Returned: code: 1  signal: null
