@@ -9,12 +9,12 @@ var app = express();
 
 var massive = require("massive");
 
-var massiveInstance = massive.connectSync({connectionString : connectionString})
 var connectionString = "postgres://localhost/media_ranker";
+var massiveInstance = massive.connectSync({connectionString : connectionString})
 
 // Set a reference to the massive instance on Express' app:
 app.set('db', massiveInstance);
-http.createServer(app).listen(8080);
+// http.createServer(app).listen(8080);
 
 // used for adding images
 app.use(express.static('public'));
