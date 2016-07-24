@@ -6,11 +6,18 @@
   </head>
   <body>
 
-    <img src="https://s-media-cache-ak0.pinimg.com/236x/ec/1c/80/ec1c80d7c25e0cf6e198cda6d4fd1cf8.jpg"/>
+    <!-- <img src="https://s-media-cache-ak0.pinimg.com/236x/ec/1c/80/ec1c80d7c25e0cf6e198cda6d4fd1cf8.jpg"/> -->
     <h1><%= title %></h1><%= blurb %>
 
     <h2>Top Movies</h2>
-    <%= result %>
+    <% for (var movie of result) { %>
+      <p>
+        <%= movie.title %>
+      </p>
+      <p>
+        Ranked: <%= movie.ranked %>
+      </p>
+    <% } %>
 
 
     <h2>Top Books</h2>

@@ -11,9 +11,7 @@ var IndexController = {
 
     db.movies.find({}, function(err, result) {
       //return either the record or null
-      // locals.title = "title goes here"
-      // locals.ranked = "ranking goes here"
-      locals.result = JSON.stringify(result);
+      locals.result = result;
 
       response.render('index', locals);
     })
