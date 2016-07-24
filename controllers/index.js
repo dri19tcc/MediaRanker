@@ -4,7 +4,8 @@ var IndexController = {
 
     locals.title = "Media Ranker"
     locals.blurb = "Ranking the Best of Everything!"
-    // locals.params = "stuff here"
+    // locals.movies = 
+
     response.render('index', locals);
   },
 }
