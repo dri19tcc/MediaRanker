@@ -4,10 +4,20 @@ var IndexController = {
 
     locals.title = "Media Ranker"
     locals.blurb = "Ranking the Best of Everything!"
-    // locals.movies = 
 
-    response.render('index', locals);
-  },
+    var db = request.app.get('db');
+    var movies = request.params.movies;
+    //look in the db for the movie
+
+    db.movies.find({}, function(err, result) {
+      //return either the record or null
+      // locals.title = "title goes here"
+      // locals.ranked = "ranking goes here"
+      locals.result = JSON.stringify(result);
+
+      response.render('index', locals);
+    })
+  }
 }
 
-module.exports = IndexController
+  module.exports = IndexController
