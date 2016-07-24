@@ -7,15 +7,17 @@ var IndexController = {
 
     var db = request.app.get('db');
     var movies = request.params.movies;
-    //look in the db for the movie
+    var books = request.params.books;
+    var albums = request.params.albums;
+    //look in the db for the movie, book, or album
 
-    db.movies.find({}, function(err, result) {
-      //return either the record or null
-      locals.result = result;
+    locals.movie = db.movies.findSync({})
+    locals.book = db.books.findSync({})
+    locals.album = db.albums.findSync({})
+    //return either the record or null
 
-      response.render('index', locals);
-    })
+    response.render('index', locals);
   }
 }
 
-  module.exports = IndexController
+module.exports = IndexController

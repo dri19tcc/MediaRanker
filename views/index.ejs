@@ -10,18 +10,40 @@
     <h1><%= title %></h1><%= blurb %>
 
     <h2>Top Movies</h2>
-    <% for (var movie of result) { %>
+    <% for (var mov of movie) { %>
       <p>
-        <%= movie.title %>
+        <h3>
+          <%= mov.title %>
+        </h3>
       </p>
       <p>
-        Ranked: <%= movie.ranked %>
+        Ranked: <%= mov.ranked %>
       </p>
     <% } %>
 
-
     <h2>Top Books</h2>
+    <% for (var boo of book) { %>
+      <p>
+        <h3>
+          <%= boo.title %>
+        </h3>
+      </p>
+      <p>
+        Ranked: <%= boo.ranked %>
+      </p>
+    <% } %>
+
     <h2>Top Albums</h2>
+    <% for (var alb of album) { %>
+      <p>
+        <h3>
+          <%= alb.title %>
+        </h3>
+      </p>
+      <p>
+        Ranked: <%= alb.ranked %>
+      </p>
+    <% } %>
 
   </body>
 </html>
