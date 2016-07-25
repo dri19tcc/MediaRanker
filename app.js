@@ -9,6 +9,8 @@ var app = express();
 
 var massive = require("massive");
 
+var app = module.exports = express()
+
 var connectionString = "postgres://localhost/media_ranker";
 var massiveInstance = massive.connectSync({connectionString : connectionString})
 
@@ -17,7 +19,7 @@ app.set('db', massiveInstance);
 // http.createServer(app).listen(8080);
 
 // used for adding images
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')))
 
 // view engine setup
 //not using jade
@@ -36,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var indexRoutes = require('./routes/index');
 app.use('/', indexRoutes);
+app.use('/movies/:id', indexRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

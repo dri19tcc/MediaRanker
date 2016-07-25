@@ -1,3 +1,5 @@
+var Movie = require('../models/movie')
+
 var IndexController = {
   getIndex: function (request, response) {
     var locals = {}
@@ -20,11 +22,15 @@ var IndexController = {
   },
 
   getMovies: function (request, response) {
-    var locals = {}
-
-    locals.title = "Media Ranker"
-
-    response.render('movies', locals)
+    Movie.findMovie(req.params.id, function(error, movie) {
+      if(error) {
+        var err = new Error("Movie does not exist")
+        err.status = 404
+        next(err)
+      } else {
+        response.render('movies', movie)
+      }
+    })
   }
 }
 
