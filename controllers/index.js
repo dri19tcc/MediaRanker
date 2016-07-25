@@ -17,6 +17,14 @@ var IndexController = {
     //return either the record or null
 
     response.render('index', locals);
+  },
+
+  getMovies: function (request, response) {
+    var locals = {}
+
+    locals.title = "Media Ranker"
+
+    response.render('movies', locals)
   }
 }
 
